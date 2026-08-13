@@ -1,0 +1,46 @@
+{
+  "skill_name": "vercel-node-serverless",
+  "evals": [
+    {
+      "id": 0,
+      "name": "static-404-no-css",
+      "prompt": "I deployed my Express site to Vercel. server.js serves index.html, styles.css and main.js with res.sendFile, plus a few /api routes. On localhost it's perfect, but on the live Vercel URL the page loads as raw unstyled HTML — no CSS, images broken, buttons do nothing. When I curl the styles.css URL it 404s. What's wrong and how do I fix it?",
+      "expected_output": "Identifies that @vercel/node bundles server.js but not the static assets read via sendFile, so they 404. Fix: add includeFiles to vercel.json listing the static files (and JSON data file). Verifies with curl checking 200 + content-type. Bonus: mentions app.listen guard / module.exports and hard-reload for browser cache.",
+      "files": [],
+      "assertions": [
+        "Diagnoses @vercel/node bundles server.js but not the sendFile static assets → 404",
+        "Prescribes includeFiles in vercel.json listing the static files",
+        "Provides a concrete correct vercel.json snippet",
+        "Recommends curl verification (200 + content-type) and/or hard-reload for cache"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "vanishing-logins-persistence",
+      "prompt": "My Node/Express app is live on Vercel. New users can register and sign in fine, but an hour or two later their login stops working — 'invalid email or password' even though they never changed it. New orders and admin edits also seem to just disappear. The app stores everything in a data.json file next to server.js. What is going on and how do I make it reliable?",
+      "expected_output": "Diagnoses ephemeral/read-only serverless filesystem: fs writes to the JSON file are lost on cold start. Fix: move to Postgres (Neon/Vercel Postgres) via a dual-mode store adapter that keeps the same method names (JSON local, Postgres when DATABASE_URL set); make route calls await; add pg dep; set DATABASE_URL in Vercel; redeploy. Ideally mentions proving persistence survives a cold start.",
+      "files": [],
+      "assertions": [
+        "Diagnoses ephemeral/read-only serverless filesystem: JSON writes lost on cold start",
+        "Recommends a real database (Postgres/Neon/Vercel Postgres)",
+        "Migration preserves existing method names (dual-mode adapter), not a full rewrite",
+        "Covers DATABASE_URL env + pg dep + await calls + redeploy",
+        "Mentions verifying a write persists across requests/cold starts"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "deploy-express-from-scratch",
+      "prompt": "I have a small Express app: server.js serves index.html + styles.css + client.js and has an /api/messages route, with data kept in a messages.json file. I want to put it live on Vercel with my own domain later. Walk me through deploying it properly — I've heard people run into weird issues with these on Vercel.",
+      "expected_output": "Gives the correct serverless deploy path: vercel.json with @vercel/node + includeFiles (assets + json), guard app.listen behind !process.env.VERCEL + module.exports app, vercel deploy --prod. Proactively warns about the ephemeral-filesystem data-loss trap (messages.json writes won't persist → Postgres) and ideally the awaited-email and cache-header points. Mentions custom domain + verifying apex and www.",
+      "files": [],
+      "assertions": [
+        "Provides correct vercel.json (@vercel/node + includeFiles with assets and json)",
+        "Guards app.listen behind !process.env.VERCEL and exports the app",
+        "Proactively warns messages.json writes won't persist (ephemeral FS) → Postgres, unprompted",
+        "Gives vercel deploy --prod and custom-domain steps (verify apex + www)",
+        "Does not hallucinate incorrect Vercel behavior (no long-running process / persistent fs claims)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "$comment": "Index of skills in this repo. `type` drives how tools/score-skills.mjs judges portability: a 'project' skill SHOULD pin absolute locations; a 'portable' skill should not. `origin` records where it came from.",
+  "generated": "2026-08-13",
+  "owner": "Vishal Agarwal",
+  "skills": [
+    {
+      "name": "vishal-agarwal-site",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "summary": "iamvishalagarwal.com — architecture, routers, admin, ebook, consultations, bKash, and every gotcha that cost time."
+    },
+    {
+      "name": "kianben-web",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "summary": "kianben.com shared-import community — Express on Vercel, dual-mode store, book shop, board."
+    },
+    {
+      "name": "garmentmind",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "summary": "L/C discrepancy checker — the 18-rule engine, the wedge strategy, and the honest gap list."
+    },
+    {
+      "name": "social-media-agent",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "summary": "The YouTube/Facebook/Instagram growth agent — micro-agents, playbook, verdict loop, blob-queue control."
+    },
+    {
+      "name": "vercel-node-serverless",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "summary": "Ship a file-based Node/Express app to Vercel serverless without the ephemeral-filesystem and static-404 traps."
+    },
+    {
+      "name": "responsive-reveal-audit",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "summary": "Turn \"it looks broken on mobile\" into exact pixel numbers with browser probes, then fix what is actually wrong."
+    },
+    {
+      "name": "hero-canvas-fx",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "summary": "Animated canvas hero backgrounds and page splits for plain HTML/CSS/JS sites, verified in a throttled preview."
+    },
+    {
+      "name": "ship-modern-3d-site",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "summary": "Next.js + react-three-fiber + motion + Lenis, end to end, including the Vercel deploy failures that look like bugs."
+    },
+    {
+      "name": "personal-mentor-website",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "summary": "Personal-brand / mentorship site with an owner-editable admin panel, booking, and Bkash payments."
+    },
+
+    {
+      "name": "claude-code-setup-ops",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Install and scope MCP servers, skills and plugins at user scope — and debug \"it isn't showing\"."
+    },
+    {
+      "name": "session-to-project-skill",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Compress a build session into a durable project skill a cold conversation can act from."
+    },
+    {
+      "name": "work-within-usage-limits",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Portion, checkpoint and resume long builds so a usage limit never destroys work in flight."
+    },
+    {
+      "name": "prove-before-claiming",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Verification discipline — offline harnesses, live smoke tests, and the tools in this environment that lie."
+    },
+    {
+      "name": "zero-js-admin-panel",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Server-rendered owner dashboards that work with JavaScript fully disabled."
+    },
+    {
+      "name": "owner-admin-security",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Device-bound admin access, master key, inactivity failover hierarchy, audit trail, fail-closed guards."
+    },
+    {
+      "name": "self-improving-agent-loop",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Agent systems that measurably improve — specialists, observed outcomes as training signal, a critic that deletes."
+    },
+    {
+      "name": "windows-agent-automation",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Windows traps for agents driving CLIs and schedulers — .cmd shims, PowerShell 5.1, encoding, Task Scheduler."
+    },
+    {
+      "name": "email-capture-and-delivery",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Verify addresses, canonicalize and dedupe, deliver mail, and never let a form fake success."
+    },
+    {
+      "name": "vercel-hobby-limits",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "The free-tier walls — 12 functions, 4.5 MB, rewrites that merge query strings — and the architecture that answers them."
+    },
+    {
+      "name": "bkash-payment-integration",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Taking money in Bangladesh — manual TrxID flow and full bKash PGW, with the money-safety rules."
+    },
+    {
+      "name": "bd-import-export-domain",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "The NBR duty cascade, HS codes, UCP 600 L/C discrepancies, shared imports, and the market realities."
+    },
+    {
+      "name": "ruthless-venture-review",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Adversarial, scored evaluation of an idea — kill-shot first, then the narrower wedge that would work."
+    },
+    {
+      "name": "no-code-owner-handoff",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Hand a working system to a non-technical owner: click-by-click steps, a secrets checklist, a three-item runbook."
+    },
+    {
+      "name": "content-integrity-guard",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Never invent a testimonial, a number or a country — and a grep gate that catches corrected facts creeping back."
+    },
+    {
+      "name": "public-data-without-api-keys",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Real platform data with no key or login — embedded JSON, oEmbed, crawler UAs, and which URLs expire."
+    },
+    {
+      "name": "brand-media-pipeline",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Brand imagery and video without burning credits — local cutouts, self-hosting, thumbnails, text-shaping limits."
+    },
+    {
+      "name": "autonomous-channel-plan",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "summary": "Honest feasibility and architecture for a self-running content channel, including why 1M is a goal not a plan."
+    }
+  ],
+
+  "$third_party_comment": "Installed from upstream and NOT vendored here — they have their own licences and release cadence. tools/install-third-party.sh fetches them.",
+  "third_party": [
+    { "name": "impeccable",                    "source": "github:pbakaus/impeccable",              "license": "Apache-2.0", "use": "frontend design/craft passes" },
+    { "name": "emil-design-eng",               "source": "github:emilkowalski/skill",              "license": "see repo",   "use": "UI polish + animation judgement" },
+    { "name": "taste-skill",                   "source": "github (anti-slop frontend skill)",      "license": "see repo",   "use": "landing pages / portfolios that don't look templated" },
+    { "name": "deploy-to-vercel",              "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "deployment" },
+    { "name": "vercel-cli-with-tokens",        "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "token-auth Vercel CLI" },
+    { "name": "vercel-optimize",               "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "cost/perf audits" },
+    { "name": "vercel-react-best-practices",   "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "React/Next perf" },
+    { "name": "vercel-composition-patterns",   "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "component API design" },
+    { "name": "vercel-react-native-skills",    "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "React Native" },
+    { "name": "vercel-react-view-transitions", "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "view transitions" },
+    { "name": "web-design-guidelines",         "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "UI review" },
+    { "name": "writing-guidelines",            "source": "github:vercel-labs/skills",              "license": "MIT",        "use": "prose review" },
+    { "name": "ui-ux-pro-max",                 "source": "github:nextlevelbuilder/ui-ux-pro-max-skill", "license": "see repo", "use": "design intelligence plugin" },
+    { "name": "caveman",                       "source": "github:JuliusBrussee/caveman",           "license": "see repo",   "use": "token-efficient output mode (always on here)" }
+  ]
+}

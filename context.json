@@ -1,0 +1,109 @@
+{
+  "$schema_note": "Machine-readable index of this repo. Designed to be fetched and parsed by an agent that wants to decide which files to pull, without reading everything. Paths are repo-relative; prefix with the raw URL base to fetch.",
+  "version": "1.0.0",
+  "generated": "2026-08-13",
+  "raw_base": "https://raw.githubusercontent.com/hellokianben-collab/vishal-agarwal-context/main/",
+
+  "person": {
+    "name": "Vishal Agarwal",
+    "country": "Bangladesh",
+    "roles": ["importer", "exporter", "cement dealer", "business educator", "author"],
+    "writes_code": false,
+    "working_language": "English",
+    "public_email": "mvishal550@gmail.com",
+    "site": "https://iamvishalagarwal.com",
+    "book": { "title": "Prothom Container", "launch": "2026-07-31T19:00:00+06:00" },
+    "mentored": "28+",
+    "years_in_trade": "4+",
+    "countries_named": ["Bangladesh", "China", "India", "Vietnam"],
+    "machine_profile_name_is_not_his_name": true
+  },
+
+  "entry_points": {
+    "any_agent": "AGENTS.md",
+    "claude_code": "CLAUDE.md",
+    "human": "README.md"
+  },
+
+  "read_first": [
+    "profile/00-who-i-am.md",
+    "profile/01-how-i-work.md",
+    "profile/05-open-questions.md"
+  ],
+
+  "profile": {
+    "profile/00-who-i-am.md": "Identity, four ventures, the book, audience, and the no-coding-background constraint.",
+    "profile/01-how-i-work.md": "THE WORKING AGREEMENT. 13 rules, each traced to a verbatim quote. Highest-value file in the repo.",
+    "profile/02-tech-environment.md": "Windows 11 / PowerShell 5.1 workstation, Vercel Hobby + Neon + Resend, accounts, live properties, hard limits.",
+    "profile/03-domain-knowledge.md": "NBR duty cascade, UCP 600 L/C discrepancies, shared imports, bKash/Nagad, BD data rules, the BDT settlement proposal.",
+    "profile/05-open-questions.md": "13 genuinely unresolved items. Ask, never guess."
+  },
+
+  "work_history": {
+    "work-history/timeline.md": "Dated build log, 3 Jun - 13 Aug 2026, reconstructed from 83 sessions / 363 requests.",
+    "work-history/projects/iamvishalagarwal-com.md": "Flagship site + product platform. Live.",
+    "work-history/projects/kianben-com.md": "Shared-import community. Live.",
+    "work-history/projects/garmentmind.md": "L/C discrepancy checker SaaS. v0.1 demo, honest gap list.",
+    "work-history/projects/landed-calculator.md": "NBR duty + landed-cost calculator, 7,465 HS codes. Rated 8.5/10 by the owner.",
+    "work-history/projects/social-media-agent.md": "Six micro-agents with an observed-outcome training signal. Running.",
+    "work-history/projects/invoice-tools.md": "Two attempts at trade paperwork; the static one shipped.",
+    "work-history/projects/other-work.md": "BDT settlement proposal, OpenMontage, three earlier portfolio iterations."
+  },
+
+  "lessons": "lessons/README.md",
+
+  "ratings": {
+    "rubric": "ratings/RUBRIC.md",
+    "scorecard": "ratings/SCORECARD.md",
+    "machine_scores": "ratings/scores.json",
+    "human_scores": "ratings/human-scores.json",
+    "recompute": "node tools/score-skills.mjs",
+    "summary": { "count": 27, "mean": 69.3, "min": 44, "max": 89, "bands": { "A": 0, "B": 1, "C": 13, "D": 10, "F": 3 } }
+  },
+
+  "skills_index": "skills/manifest.json",
+
+  "skills_by_intent": {
+    "resume work on a specific project": ["vishal-agarwal-site", "kianben-web", "garmentmind", "social-media-agent"],
+    "deploy a node app to serverless": ["vercel-node-serverless", "vercel-hobby-limits"],
+    "the site looks broken on mobile": ["responsive-reveal-audit"],
+    "build an admin panel": ["zero-js-admin-panel", "owner-admin-security"],
+    "a login silently does nothing": ["zero-js-admin-panel"],
+    "take payments in Bangladesh": ["bkash-payment-integration"],
+    "forms, signups, transactional email": ["email-capture-and-delivery"],
+    "import duty, HS codes, L/C discrepancies": ["bd-import-export-domain"],
+    "build or schedule an autonomous agent": ["self-improving-agent-loop", "windows-agent-automation", "autonomous-channel-plan"],
+    "install an MCP server, skill or plugin": ["claude-code-setup-ops"],
+    "a long build might get cut off": ["work-within-usage-limits", "session-to-project-skill"],
+    "before claiming something is done": ["prove-before-claiming"],
+    "hand the system to the owner": ["no-code-owner-handoff"],
+    "writing copy for a live page": ["content-integrity-guard"],
+    "get real video or post data without an API key": ["public-data-without-api-keys"],
+    "brand imagery, thumbnails, video": ["brand-media-pipeline"],
+    "evaluate a business idea": ["ruthless-venture-review"],
+    "build a 3D or animated marketing site": ["ship-modern-3d-site", "hero-canvas-fx", "personal-mentor-website"]
+  },
+
+  "hard_rules": [
+    "Never invent a fact, testimonial, number, or country. Unknowns go to profile/05-open-questions.md.",
+    "Given the choice, take the harder, higher-impact option.",
+    "Deploy is part of done; a local preview is not a result.",
+    "Report what was verified AND what was not.",
+    "Scope is exactly what was named.",
+    "When the message is a question, answer it and stop.",
+    "He does not write code and will not debug — hand off click-by-click.",
+    "Confirm before spending money, publishing, deleting, or changing DNS/accounts."
+  ],
+
+  "never_regress": {
+    "Bishal": "Vishal",
+    "1,000+ mentored": "28+",
+    "6+ years": "4+ years",
+    "Building Businesses Beyond Borders": "Prothom Container",
+    "Confidence Cement": "Cement (no brand name)",
+    "any Bengali text in a product": "English only, including the Taka sign U+09F3 -> write Tk"
+  },
+
+  "contains_no_secrets": true,
+  "license": "CC BY 4.0 (this repo's content). Third-party skills are referenced, not redistributed."
+}

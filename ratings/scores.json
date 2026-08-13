@@ -1,0 +1,2222 @@
+{
+  "rows": [
+    {
+      "name": "autonomous-channel-plan",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 118,
+      "machine": 38,
+      "machineMax": 60,
+      "human": 21,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 8,
+          "max": 15,
+          "why": "Its main contribution is naming the non-engineering failure modes — platform policy on mass-produced content, a single-account strike risk, and five free-tier services being five silent breakage points — which is what actually kills this class of project."
+        },
+        "reuseLeverage": {
+          "score": 8,
+          "max": 15,
+          "why": "Single-purpose scoping document for one open request. Valuable precisely once, though the honesty template for pushing back on an unreachable target does generalise."
+        },
+        "maintenance": {
+          "score": 5,
+          "max": 10,
+          "why": "Rests on current platform monetization policy and current API quota numbers, both of which move, and on an ask that has not been decided yet."
+        }
+      },
+      "humanError": null,
+      "total": 59,
+      "dims": {
+        "trigger": {
+          "score": 11,
+          "max": 12,
+          "notes": [
+            "2 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "0 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 118
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 5,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "2 quoted user-phrase triggers (want >=3)",
+        "1 code blocks",
+        "0 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "bd-import-export-domain",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 174,
+      "machine": 43,
+      "machineMax": 60,
+      "human": 25,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 8,
+          "max": 15,
+          "why": "Two strong engineering rules drawn from the domain — never fire a rule on missing data, always state consequence and fix — plus the worked cascade example that a wrong implementation will visibly fail, but it is knowledge rather than an incident log."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "This is the owner's actual expertise encoded, and it is the input every product here depends on. It is also the part an assistant cannot derive from a codebase."
+        },
+        "maintenance": {
+          "score": 5,
+          "max": 10,
+          "why": "The tariff dataset is republished every fiscal year and the rates change with it; UCP 600 and the cascade structure are durable, the numbers are not."
+        }
+      },
+      "humanError": null,
+      "total": 68,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "2 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 174
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "2 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "no stack/environment/identity table",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "bkash-payment-integration",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 144,
+      "machine": 44,
+      "machineMax": 60,
+      "human": 28,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 12,
+          "max": 15,
+          "why": "The money-safety rules are each stated as the failure they prevent, and the dead shared-sandbox credentials are called out with the verbatim 9999 error so nobody spends a day debugging their own code."
+        },
+        "reuseLeverage": {
+          "score": 10,
+          "max": 15,
+          "why": "High value inside Bangladesh and zero outside it. The idempotency and server-side-pricing rules do generalise to any gateway."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "The API version path and the go-live process are bKash's to change, and the merchant portal has already changed once during this history."
+        }
+      },
+      "humanError": null,
+      "total": 72,
+      "dims": {
+        "trigger": {
+          "score": 11,
+          "max": 12,
+          "notes": [
+            "2 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "max": 12,
+          "notes": [
+            "0 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "undated — decay risk invisible",
+            "0 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 144
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "2 quoted user-phrase triggers (want >=3)",
+        "0 runnable command lines",
+        "0 concrete file paths",
+        "undated — decay risk invisible",
+        "0 measured quantities"
+      ]
+    },
+    {
+      "name": "brand-media-pipeline",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 146,
+      "machine": 41,
+      "machineMax": 60,
+      "human": 27,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 10,
+          "max": 15,
+          "why": "Covers the signed-CDN-URL trap that yields a broken image next week, the raqm-less Pillow that cannot shape Bengali with no runtime workaround, the immutable-cache trap, and the 256 KiB API cap that decodes to corrupt files."
+        },
+        "reuseLeverage": {
+          "score": 11,
+          "max": 15,
+          "why": "The local-and-free-first default already replaced a paid generation once, and the imagery question recurs on every site build."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "ffmpeg and the caching rules are durable; the generation-tool landscape and the specific MCP notes turn over quickly."
+        }
+      },
+      "humanError": null,
+      "total": 68,
+      "dims": {
+        "trigger": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "0 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 6,
+          "max": 12,
+          "notes": [
+            "2 code blocks",
+            "4 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "2 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 146
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "0 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "2 code blocks",
+        "4 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "2 measured quantities"
+      ]
+    },
+    {
+      "name": "claude-code-setup-ops",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 158,
+      "machine": 46,
+      "machineMax": 60,
+      "human": 33,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 13,
+          "max": 15,
+          "why": "Built entirely around the real recurring failure — installed at local scope, works in one folder, invisible everywhere else — plus the three distinct reasons a skill doesn't appear in / and a stop-at-first-failure diagnostic ladder."
+        },
+        "reuseLeverage": {
+          "score": 14,
+          "max": 15,
+          "why": "This exact task recurred more than fifteen times across the session history and had no skill covering it; it fires on every new MCP, skill or plugin."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "The scoping principle is durable but the CLI surface it depends on — flag names, settings.json keys, marketplace format — is young and changes."
+        }
+      },
+      "humanError": null,
+      "total": 79,
+      "dims": {
+        "trigger": {
+          "score": 12,
+          "max": 12,
+          "notes": []
+        },
+        "actionability": {
+          "score": 10,
+          "max": 12,
+          "notes": []
+        },
+        "evidence": {
+          "score": 0,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "0 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 158
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "little symptom->cause reasoning"
+      ]
+    },
+    {
+      "name": "content-integrity-guard",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 103,
+      "machine": 34,
+      "machineMax": 60,
+      "human": 31,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 10,
+          "max": 15,
+          "why": "Names the four places fabrication actually enters — design imports carrying confident placeholder copy, filling out a thin-looking section, re-deploys restoring an old file, and summaries dropping a hedge — and ships a grep gate that catches regression mechanically."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "Applies to every page published under a real person's name, and the pre-deploy grep is a permanent mechanism rather than a reminder."
+        },
+        "maintenance": {
+          "score": 9,
+          "max": 10,
+          "why": "The rules are absolute and timeless; only the specific corrected-facts list is project-bound, and it lives next to the facts it guards."
+        }
+      },
+      "humanError": null,
+      "total": 65,
+      "dims": {
+        "trigger": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "0 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "3 runnable command lines",
+            "1 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 1,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "2 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 103
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "0 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "1 code blocks",
+        "3 runnable command lines",
+        "1 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "2 measured quantities",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "email-capture-and-delivery",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 153,
+      "machine": 39,
+      "machineMax": 60,
+      "human": 34,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 14,
+          "max": 15,
+          "why": "Four distinct real failures with their diagnoses: the 403 that is a sender-domain validation error and not a bad key, the double unique index that turns a duplicate into a 500, the +tag regex that rejected every real Gmail alias, and the form that stored eight enquiries while notifying nobody for three weeks."
+        },
+        "reuseLeverage": {
+          "score": 13,
+          "max": 15,
+          "why": "Every project here has a form, and the canonicalization plus unique-index rule is the kind of thing that is cheap to get right once and expensive to discover in production."
+        },
+        "maintenance": {
+          "score": 7,
+          "max": 10,
+          "why": "Gmail's dot/plus semantics and Postgres conflict behaviour are stable; the provider-specific 403 wording is not."
+        }
+      },
+      "humanError": null,
+      "total": 73,
+      "dims": {
+        "trigger": {
+          "score": 8,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 8,
+          "max": 12,
+          "notes": [
+            "2 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "undated — decay risk invisible",
+            "0 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 153
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "2 runnable command lines",
+        "0 concrete file paths",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "garmentmind",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "lines": 282,
+      "machine": 44,
+      "machineMax": 60,
+      "human": 27,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 10,
+          "max": 15,
+          "why": "Strong on the honest-gaps side — mock extraction, throwaway /tmp SQLite, rules never tuned on a real L/C, no independent audit of money-critical logic — but lighter on operational symptom-to-cause traps than the site skills."
+        },
+        "reuseLeverage": {
+          "score": 11,
+          "max": 15,
+          "why": "Carries the whole product thesis and the 18-rule engine, so a new session can continue the business as well as the code. Project-bound, but that project is a company."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "The strategy and the rule table are durable; the capability/gap list is a snapshot that goes stale the moment real extraction lands."
+        }
+      },
+      "humanError": null,
+      "total": 71,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 6,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "0 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 5,
+          "max": 10,
+          "notes": [
+            "undated — decay risk invisible",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 282
+        },
+        "portability": {
+          "score": 7,
+          "max": 10,
+          "notes": [
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 8,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "1 code blocks",
+        "0 runnable command lines",
+        "undated — decay risk invisible",
+        "little symptom->cause reasoning",
+        "no cross-references to sibling skills"
+      ]
+    },
+    {
+      "name": "hero-canvas-fx",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "lines": 222,
+      "machine": 36,
+      "machineMax": 60,
+      "human": 25,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 9,
+          "max": 15,
+          "why": "Covers the blank-canvas-in-preview problem and reduced-motion/off-screen pausing, but is more recipe than failure catalogue."
+        },
+        "reuseLeverage": {
+          "score": 9,
+          "max": 15,
+          "why": "Narrow: it applies when a plain HTML/CSS/JS site needs an animated hero or a page split. Useful when it fires, rarely fires."
+        },
+        "maintenance": {
+          "score": 7,
+          "max": 10,
+          "why": "Canvas 2D and DPR handling are stable; the preview-pane workaround is tied to one tool's current behaviour."
+        }
+      },
+      "humanError": null,
+      "total": 61,
+      "dims": {
+        "trigger": {
+          "score": 9,
+          "max": 12,
+          "notes": [
+            "2 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "0 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "3 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 222
+        },
+        "portability": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table",
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "2 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "0 runnable command lines",
+        "few verbatim error strings",
+        "3 measured quantities",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table",
+        "no cross-references to sibling skills",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "kianben-web",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "lines": 222,
+      "machine": 39,
+      "machineMax": 60,
+      "human": 27,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 11,
+          "max": 15,
+          "why": "The vanishing-logins diagnosis is exemplary and the 'never reintroduce fs writes in a handler' rule is stated as a standing prohibition, but fewer distinct failure signatures are catalogued than in the vishal-site skill."
+        },
+        "reuseLeverage": {
+          "score": 10,
+          "max": 15,
+          "why": "Complete working guide for a live site including the deliberate page-split reasoning, but bounded to that codebase."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "Architecture notes are stable; the feature inventory and TODO list drift with every deploy."
+        }
+      },
+      "humanError": null,
+      "total": 66,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 3,
+          "max": 12,
+          "notes": [
+            "0 code blocks",
+            "0 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "2 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 222
+        },
+        "portability": {
+          "score": 7,
+          "max": 10,
+          "notes": [
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "0 code blocks",
+        "0 runnable command lines",
+        "few verbatim error strings",
+        "2 measured quantities",
+        "little symptom->cause reasoning",
+        "no cross-references to sibling skills"
+      ]
+    },
+    {
+      "name": "no-code-owner-handoff",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 176,
+      "machine": 39,
+      "machineMax": 60,
+      "human": 31,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 9,
+          "max": 15,
+          "why": "Identifies the specific handoff failures — a step with no expected result so the owner cannot distinguish success from silence, an optional-looking variable that silently disables email, and a limitation discovered at the worst moment — but few technical symptoms."
+        },
+        "reuseLeverage": {
+          "score": 13,
+          "max": 15,
+          "why": "The owner does not code, so every single deliverable in this environment ends in a handoff shaped by this skill."
+        },
+        "maintenance": {
+          "score": 9,
+          "max": 10,
+          "why": "Pure communication practice; nothing here depends on a version or a vendor."
+        }
+      },
+      "humanError": null,
+      "total": 70,
+      "dims": {
+        "trigger": {
+          "score": 9,
+          "max": 12,
+          "notes": [
+            "0 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 6,
+          "max": 12,
+          "notes": [
+            "1 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "1 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 176
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "0 quoted user-phrase triggers (want >=3)",
+        "1 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "1 measured quantities",
+        "no stack/environment/identity table",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "owner-admin-security",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 130,
+      "machine": 37,
+      "machineMax": 60,
+      "human": 31,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 12,
+          "max": 15,
+          "why": "The fail-open guard is shown as wrong-code-then-right-code, and the 'do not count an admin login as presence' correction is a security property that is invisible until named — an attacker who got in would otherwise sustain their own lockout of the owner."
+        },
+        "reuseLeverage": {
+          "score": 11,
+          "max": 15,
+          "why": "Needed on every product with an owner panel, and the inactivity-failover hierarchy is an unusual design most projects never think to build."
+        },
+        "maintenance": {
+          "score": 8,
+          "max": 10,
+          "why": "HMAC cookies and timing-safe comparison are stable primitives; nothing here depends on a vendor's current behaviour."
+        }
+      },
+      "humanError": null,
+      "total": 68,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "max": 12,
+          "notes": [
+            "2 code blocks",
+            "0 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "1 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 130
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "2 code blocks",
+        "0 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "1 measured quantities",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "personal-mentor-website",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "lines": 67,
+      "machine": 25,
+      "machineMax": 60,
+      "human": 19,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 5,
+          "max": 15,
+          "why": "Almost none documented. It is a build recipe with a decision fork at the top, not a record of what went wrong."
+        },
+        "reuseLeverage": {
+          "score": 8,
+          "max": 15,
+          "why": "Genuinely useful for the recurring 'personal brand site with an owner-editable panel' ask, and the two-stack fork is a real decision, but it duplicates material now better covered by newer skills."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "Stack-agnostic enough to age slowly, but the Bkash and booking sections are superseded by bkash-payment-integration and the vishal-agarwal-site consultation work."
+        }
+      },
+      "humanError": null,
+      "total": 44,
+      "dims": {
+        "trigger": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "0 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 0,
+          "max": 12,
+          "notes": [
+            "0 code blocks",
+            "0 runnable command lines",
+            "2 concrete file paths",
+            "few numbered steps / checklist items"
+          ]
+        },
+        "evidence": {
+          "score": 1,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "2 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 67
+        },
+        "portability": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table",
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 5,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "0 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "0 code blocks",
+        "0 runnable command lines",
+        "2 concrete file paths",
+        "few numbered steps / checklist items",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "2 measured quantities",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table",
+        "no cross-references to sibling skills",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "prove-before-claiming",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 156,
+      "machine": 41,
+      "machineMax": 60,
+      "human": 35,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 14,
+          "max": 15,
+          "why": "Its core contribution is an explicit list of tools in this environment that return false results — the preview pane freezing rAF, vercel domains inspect misreporting ownership, env pull returning empty for sensitive vars, a local dev server sending no CSP — which is precisely the evidence a verification pass would otherwise trust."
+        },
+        "reuseLeverage": {
+          "score": 14,
+          "max": 15,
+          "why": "Fires before every 'done', which is every task, and the pglite harness pattern is directly reusable on any Postgres-backed project."
+        },
+        "maintenance": {
+          "score": 7,
+          "max": 10,
+          "why": "The discipline and the reporting format are durable; the specific list of lying tools is environment-bound and will need pruning."
+        }
+      },
+      "humanError": null,
+      "total": 76,
+      "dims": {
+        "trigger": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "no explicit \"use when\" trigger clause",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 9,
+          "max": 12,
+          "notes": [
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "2 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 156
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "no explicit \"use when\" trigger clause",
+        "no boundary / negative scope",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "2 measured quantities",
+        "little symptom->cause reasoning",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "public-data-without-api-keys",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 127,
+      "machine": 36,
+      "machineMax": 60,
+      "human": 26,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 11,
+          "max": 15,
+          "why": "Explains why DOM scraping returns nothing on lazy-loaded pages, why reconstructing title-to-id pairing from embedded JSON produces mismatches, that Facebook needs a retry before OG tags appear, and which URL shapes are signed and will die."
+        },
+        "reuseLeverage": {
+          "score": 11,
+          "max": 15,
+          "why": "The general method — embedded state, then oEmbed, then crawler UA, then OG tags — transfers to most platforms, and it is what makes real content available instead of invented content."
+        },
+        "maintenance": {
+          "score": 4,
+          "max": 10,
+          "why": "It depends on undocumented internals of two platforms. ytInitialData's shape and Facebook's crawler response are both things that change without notice, and the skill will silently rot rather than error."
+        }
+      },
+      "humanError": null,
+      "total": 62,
+      "dims": {
+        "trigger": {
+          "score": 9,
+          "max": 12,
+          "notes": [
+            "0 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 6,
+          "max": 12,
+          "notes": [
+            "2 runnable command lines",
+            "0 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 0,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "0 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 127
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "0 quoted user-phrase triggers (want >=3)",
+        "2 runnable command lines",
+        "0 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "responsive-reveal-audit",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "lines": 260,
+      "machine": 40,
+      "machineMax": 60,
+      "human": 34,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 12,
+          "max": 15,
+          "why": "Its whole thesis is that reported symptoms are unreliable and only measurement is not, and it ships three probe scripts rather than describing them."
+        },
+        "reuseLeverage": {
+          "score": 14,
+          "max": 15,
+          "why": "Every project here has hit 'looks broken on my phone' at least once; the probes turn a vague complaint into pixel numbers on any site, framework or not."
+        },
+        "maintenance": {
+          "score": 8,
+          "max": 10,
+          "why": "getBoundingClientRect and IntersectionObserver are stable web platform; only the preview-pane-specific notes are environment-bound."
+        }
+      },
+      "humanError": null,
+      "total": 74,
+      "dims": {
+        "trigger": {
+          "score": 12,
+          "max": 12,
+          "notes": []
+        },
+        "actionability": {
+          "score": 5,
+          "max": 12,
+          "notes": [
+            "0 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 3,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "3 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 260
+        },
+        "portability": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table",
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 8,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "0 runnable command lines",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "3 measured quantities",
+        "no stack/environment/identity table",
+        "no cross-references to sibling skills"
+      ]
+    },
+    {
+      "name": "ruthless-venture-review",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 124,
+      "machine": 37,
+      "machineMax": 60,
+      "human": 28,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 6,
+          "max": 15,
+          "why": "It is an evaluation method, so it documents how a review fails — flattery, hedging into uselessness, no falsification condition — rather than technical symptoms."
+        },
+        "reuseLeverage": {
+          "score": 13,
+          "max": 15,
+          "why": "Already changed a product's whole strategy once by returning ~6/10 and killing the labour-savings pitch, and the user asks for this frame repeatedly and acts on the answer."
+        },
+        "maintenance": {
+          "score": 9,
+          "max": 10,
+          "why": "Nothing version-bound. Only the market-reality numbers, like the $150-400/month merchandiser figure, will drift."
+        }
+      },
+      "humanError": null,
+      "total": 65,
+      "dims": {
+        "trigger": {
+          "score": 11,
+          "max": 12,
+          "notes": [
+            "2 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 3,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "0 runnable command lines",
+            "1 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 3,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 124
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "2 quoted user-phrase triggers (want >=3)",
+        "1 code blocks",
+        "0 runnable command lines",
+        "1 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "little symptom->cause reasoning",
+        "no stack/environment/identity table",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "self-improving-agent-loop",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 209,
+      "machine": 41,
+      "machineMax": 60,
+      "human": 33,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 12,
+          "max": 15,
+          "why": "Names the default failure of every long-running agent — a knowledge base that only grows becomes confidently wrong — and the concrete ack-failure bug where a pre-parsed body caused every sync to silently re-run the same work."
+        },
+        "reuseLeverage": {
+          "score": 13,
+          "max": 15,
+          "why": "The architecture transfers to any monitoring or growth agent, and the observed-not-self-reported training signal is the most portable idea in the whole repo."
+        },
+        "maintenance": {
+          "score": 8,
+          "max": 10,
+          "why": "The patterns are platform-independent; only the specific fingerprinting examples and the OAuth/metric-naming notes are tied to current platform behaviour."
+        }
+      },
+      "humanError": null,
+      "total": 74,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 6,
+          "max": 12,
+          "notes": [
+            "1 runnable command lines",
+            "2 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "3 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 209
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "1 runnable command lines",
+        "2 concrete file paths",
+        "few verbatim error strings",
+        "3 measured quantities",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "session-to-project-skill",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 158,
+      "machine": 44,
+      "machineMax": 60,
+      "human": 33,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 9,
+          "max": 15,
+          "why": "Names the real failure modes of the practice itself — producing a summary instead of an actionable skill, appending until it becomes a diary, and losing everything by writing it after the budget runs out — but it is a method, so there are fewer observable symptoms to catalogue."
+        },
+        "reuseLeverage": {
+          "score": 15,
+          "max": 15,
+          "why": "The highest-leverage entry in the library: it is the process that produced every other project skill here, and it was requested at least eight separate times. It compounds — each use makes the next session cheaper."
+        },
+        "maintenance": {
+          "score": 9,
+          "max": 10,
+          "why": "Almost entirely principle. The only vendor-specific part is the frontmatter shape."
+        }
+      },
+      "humanError": null,
+      "total": 77,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 7,
+          "max": 12,
+          "notes": [
+            "4 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "1 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 158
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "4 runnable command lines",
+        "few verbatim error strings",
+        "1 measured quantities",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "ship-modern-3d-site",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "lines": 46,
+      "machine": 34,
+      "machineMax": 60,
+      "human": 25,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 11,
+          "max": 15,
+          "why": "Names the deploy failures that masquerade as a broken site — 401 deployment protection, framework:null producing a 404, a stray GitHub auto-connect — which is exactly the class that wastes hours."
+        },
+        "reuseLeverage": {
+          "score": 10,
+          "max": 15,
+          "why": "Complete pipeline with four reference files, but only pays off when building that specific Next.js + R3F + motion + Lenis stack."
+        },
+        "maintenance": {
+          "score": 4,
+          "max": 10,
+          "why": "Pinned to a fast-moving stack — Next App Router, Tailwind v4, react-three-fiber, drei, Framer Motion. Written 19 June 2026 and already at risk; this is the highest decay rate in the library."
+        }
+      },
+      "humanError": null,
+      "total": 59,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 0,
+          "max": 12,
+          "notes": [
+            "0 code blocks",
+            "0 runnable command lines",
+            "2 concrete file paths",
+            "few numbered steps / checklist items"
+          ]
+        },
+        "evidence": {
+          "score": 1,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "0 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 46
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "0 code blocks",
+        "0 runnable command lines",
+        "2 concrete file paths",
+        "few numbered steps / checklist items",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "social-media-agent",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "lines": 191,
+      "machine": 38,
+      "machineMax": 60,
+      "human": 31,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 14,
+          "max": 15,
+          "why": "Seven named traps that each cost real hours: .cmd argv truncation, the 7-day OAuth refresh-token death, Meta renaming metrics, Pillow without raqm, env-var newlines, the pre-parsed body that silently re-ran every sync, and @vercel/blob v1 rejecting private stores."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "Runs an active system daily and most of its traps generalise to any scheduled agent on Windows talking to platform APIs."
+        },
+        "maintenance": {
+          "score": 5,
+          "max": 10,
+          "why": "Built on three platform APIs that change without notice — the skill itself says Meta renames metrics constantly, which is an admission that parts of it will be wrong soon."
+        }
+      },
+      "humanError": null,
+      "total": 69,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "0 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 1,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "2 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 191
+        },
+        "portability": {
+          "score": 7,
+          "max": 10,
+          "notes": [
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "1 code blocks",
+        "0 runnable command lines",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "2 measured quantities",
+        "little symptom->cause reasoning",
+        "no cross-references to sibling skills"
+      ]
+    },
+    {
+      "name": "vercel-hobby-limits",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 157,
+      "machine": 42,
+      "machineMax": 60,
+      "human": 31,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 14,
+          "max": 15,
+          "why": "Documents four failures that all present as 'nothing happened': a rewrite silently dead behind a static file, a form falling through because rewrites merge rather than replace the query string, a deploy refused at the twelfth function, and env pull returning empty for a variable that is actually set."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "Every project in this environment is on the same plan, so the router-consolidation pattern is directly reusable — it already took one project from sixteen functions to four with no URL changes."
+        },
+        "maintenance": {
+          "score": 5,
+          "max": 10,
+          "why": "Entirely composed of one vendor's current free-tier limits and resolution order. Numbers like 12 and 4.5 MB are exactly the sort of thing that changes without warning."
+        }
+      },
+      "humanError": null,
+      "total": 73,
+      "dims": {
+        "trigger": {
+          "score": 8,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 8,
+          "max": 12,
+          "notes": []
+        },
+        "evidence": {
+          "score": 5,
+          "max": 10,
+          "notes": [
+            "undated — decay risk invisible"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 157
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "undated — decay risk invisible",
+        "no stack/environment/identity table"
+      ]
+    },
+    {
+      "name": "vercel-node-serverless",
+      "type": "portable",
+      "origin": "compressed-from-sessions",
+      "lines": 208,
+      "machine": 42,
+      "machineMax": 60,
+      "human": 33,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 13,
+          "max": 15,
+          "why": "Built around the two failures that break almost every file-based Node app on Vercel — static assets 404ing because sendFile targets aren't bundled, and JSON writes vanishing on an ephemeral filesystem — with a stated diagnosis for each."
+        },
+        "reuseLeverage": {
+          "score": 14,
+          "max": 15,
+          "why": "Applies to essentially any Express-shaped app deployed to serverless, and it ships an eval set and a store-adapter template, so it is reusable as code and not only as prose."
+        },
+        "maintenance": {
+          "score": 6,
+          "max": 10,
+          "why": "Vercel's build behaviour is the substrate; includeFiles semantics and CLI flags have changed before and will again."
+        }
+      },
+      "humanError": null,
+      "total": 75,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 11,
+          "max": 12,
+          "notes": []
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "0 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 208
+        },
+        "portability": {
+          "score": 4,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table",
+            "no cross-references to sibling skills"
+          ]
+        },
+        "safety": {
+          "score": 7,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "no boundary / negative scope",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "no stack/environment/identity table",
+        "no cross-references to sibling skills"
+      ]
+    },
+    {
+      "name": "vishal-agarwal-site",
+      "type": "project",
+      "origin": "compressed-from-sessions",
+      "lines": 1150,
+      "machine": 57,
+      "machineMax": 60,
+      "human": 32,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 15,
+          "max": 15,
+          "why": "Nine numbered gotchas, each symptom-first: the four-build login saga with the exact 'nothing happens and no error' signature, the domain move that took the site down 20 minutes, 'day' being a reserved word shipping a 502, and the preview pane's specific lies."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "Total leverage on its own project — a cold session can act from it — but essentially zero transfer to any other codebase. Depth is the value here, not breadth."
+        },
+        "maintenance": {
+          "score": 5,
+          "max": 10,
+          "why": "1,150 lines of live state: env inventories, cache-buster version numbers, per-area status tables. It dates its claims, which helps, but it decays weekly and needs deliberate upkeep."
+        }
+      },
+      "humanError": null,
+      "total": 89,
+      "dims": {
+        "trigger": {
+          "score": 12,
+          "max": 12,
+          "notes": []
+        },
+        "actionability": {
+          "score": 12,
+          "max": 12,
+          "notes": []
+        },
+        "evidence": {
+          "score": 10,
+          "max": 10,
+          "notes": []
+        },
+        "structure": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "1150 lines with no references/ split — progressive disclosure missing"
+          ],
+          "lines": 1150
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 8,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1150 lines with no references/ split — progressive disclosure missing"
+      ]
+    },
+    {
+      "name": "windows-agent-automation",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 138,
+      "machine": 39,
+      "machineMax": 60,
+      "human": 33,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 14,
+          "max": 15,
+          "why": "Every entry is a trap that already cost hours on this machine, and the worst one — a .cmd shim truncating a multi-line prompt at the first newline so the model answers a question it never received — produces plausible output, which is why it survives for days undetected."
+        },
+        "reuseLeverage": {
+          "score": 12,
+          "max": 15,
+          "why": "Fires on every script that shells out or gets scheduled on this workstation, which is the only workstation in play."
+        },
+        "maintenance": {
+          "score": 7,
+          "max": 10,
+          "why": "PowerShell 5.1 and cmd.exe behaviour will not change; the specific credential and CLI paths will."
+        }
+      },
+      "humanError": null,
+      "total": 72,
+      "dims": {
+        "trigger": {
+          "score": 10,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)"
+          ]
+        },
+        "actionability": {
+          "score": 5,
+          "max": 12,
+          "notes": [
+            "2 runnable command lines",
+            "1 concrete file paths",
+            "few numbered steps / checklist items"
+          ]
+        },
+        "evidence": {
+          "score": 3,
+          "max": 10,
+          "notes": [
+            "undated — decay risk invisible",
+            "0 measured quantities",
+            "little symptom->cause reasoning"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 138
+        },
+        "portability": {
+          "score": 7,
+          "max": 10,
+          "notes": [
+            "2 absolute machine paths in a portable skill"
+          ]
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "2 runnable command lines",
+        "1 concrete file paths",
+        "few numbered steps / checklist items",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "little symptom->cause reasoning",
+        "2 absolute machine paths in a portable skill",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "work-within-usage-limits",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 122,
+      "machine": 37,
+      "machineMax": 60,
+      "human": 32,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 11,
+          "max": 15,
+          "why": "The multi-agent silent-zero trap is a genuinely non-obvious failure — a truncated fan-out returns confirmedCount 0, which reads as 'no bugs found' — and the recovery via journal.jsonl is specific and actionable."
+        },
+        "reuseLeverage": {
+          "score": 13,
+          "max": 15,
+          "why": "Applies to every long build in this environment, and the user named the constraint himself as his main problem."
+        },
+        "maintenance": {
+          "score": 8,
+          "max": 10,
+          "why": "Mostly durable practice; only the journal.jsonl recovery path is tied to a specific harness."
+        }
+      },
+      "humanError": null,
+      "total": 69,
+      "dims": {
+        "trigger": {
+          "score": 9,
+          "max": 12,
+          "notes": [
+            "2 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 4,
+          "max": 12,
+          "notes": [
+            "1 code blocks",
+            "0 runnable command lines",
+            "1 concrete file paths"
+          ]
+        },
+        "evidence": {
+          "score": 1,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "0 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 122
+        },
+        "portability": {
+          "score": 9,
+          "max": 10,
+          "notes": []
+        },
+        "safety": {
+          "score": 6,
+          "max": 8,
+          "notes": [
+            "few explicit prohibitions"
+          ]
+        }
+      },
+      "flags": [
+        "2 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "1 code blocks",
+        "0 runnable command lines",
+        "1 concrete file paths",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "0 measured quantities",
+        "few explicit prohibitions"
+      ]
+    },
+    {
+      "name": "zero-js-admin-panel",
+      "type": "portable",
+      "origin": "authored-2026-08-13",
+      "lines": 135,
+      "machine": 40,
+      "machineMax": 60,
+      "human": 34,
+      "humanMax": 40,
+      "humanDetail": {
+        "failureModes": {
+          "score": 15,
+          "max": 15,
+          "why": "The strongest failure documentation in the library: four numbered builds, what each tried, why each failed, and the generalised diagnostic — 'nothing happens and no error either' means the page's JavaScript never executed, not that the key is wrong — plus three curl commands that isolate browser from code."
+        },
+        "reuseLeverage": {
+          "score": 11,
+          "max": 15,
+          "why": "Applies to any internal or owner-facing panel, which is a recurring but not constant need."
+        },
+        "maintenance": {
+          "score": 8,
+          "max": 10,
+          "why": "Forms, links and server rendering are the most stable things on the web; only the filesystem-before-rewrites note is vendor-specific."
+        }
+      },
+      "humanError": null,
+      "total": 74,
+      "dims": {
+        "trigger": {
+          "score": 8,
+          "max": 12,
+          "notes": [
+            "1 quoted user-phrase triggers (want >=3)",
+            "no boundary / negative scope"
+          ]
+        },
+        "actionability": {
+          "score": 8,
+          "max": 12,
+          "notes": [
+            "3 runnable command lines"
+          ]
+        },
+        "evidence": {
+          "score": 2,
+          "max": 10,
+          "notes": [
+            "few verbatim error strings",
+            "undated — decay risk invisible",
+            "1 measured quantities"
+          ]
+        },
+        "structure": {
+          "score": 8,
+          "max": 8,
+          "notes": [],
+          "lines": 135
+        },
+        "portability": {
+          "score": 6,
+          "max": 10,
+          "notes": [
+            "no stack/environment/identity table"
+          ]
+        },
+        "safety": {
+          "score": 8,
+          "max": 8,
+          "notes": []
+        }
+      },
+      "flags": [
+        "1 quoted user-phrase triggers (want >=3)",
+        "no boundary / negative scope",
+        "3 runnable command lines",
+        "few verbatim error strings",
+        "undated — decay risk invisible",
+        "1 measured quantities",
+        "no stack/environment/identity table"
+      ]
+    }
+  ]
+}

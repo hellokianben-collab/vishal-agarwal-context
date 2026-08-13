@@ -1,0 +1,19 @@
+# Never commit anything that could carry a secret
+.env
+.env.*
+*.env
+.vercel/
+.claude/settings.local.json
+**/auth.json
+**/credentials*
+*.pem
+*.key
+
+# Generated
+context-pack*.md
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

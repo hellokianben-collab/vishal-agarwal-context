@@ -1,0 +1,145 @@
+{
+  "$comment": "The 40-point human half of ratings/RUBRIC.md. Every sub-score carries a justification naming specific content; the scorer REFUSES any entry whose `why` is shorter than 15 characters. Scored 13 Aug 2026. Disagree with a number? The justification is right there — argue with that.",
+  "$dimensions": {
+    "failureModes": { "max": 15, "asks": "Does it document what goes wrong, with the symptom you'd actually observe first?" },
+    "reuseLeverage": { "max": 15, "asks": "How much time does it save, on how many future tasks?" },
+    "maintenance": { "max": 10, "asks": "INVERTED RISK. 10 = principles that won't age. 0 = wrong within months." }
+  },
+
+  "vishal-agarwal-site": {
+    "failureModes": { "score": 15, "why": "Nine numbered gotchas, each symptom-first: the four-build login saga with the exact 'nothing happens and no error' signature, the domain move that took the site down 20 minutes, 'day' being a reserved word shipping a 502, and the preview pane's specific lies." },
+    "reuseLeverage": { "score": 12, "why": "Total leverage on its own project — a cold session can act from it — but essentially zero transfer to any other codebase. Depth is the value here, not breadth." },
+    "maintenance": { "score": 5, "why": "1,150 lines of live state: env inventories, cache-buster version numbers, per-area status tables. It dates its claims, which helps, but it decays weekly and needs deliberate upkeep." }
+  },
+  "garmentmind": {
+    "failureModes": { "score": 10, "why": "Strong on the honest-gaps side — mock extraction, throwaway /tmp SQLite, rules never tuned on a real L/C, no independent audit of money-critical logic — but lighter on operational symptom-to-cause traps than the site skills." },
+    "reuseLeverage": { "score": 11, "why": "Carries the whole product thesis and the 18-rule engine, so a new session can continue the business as well as the code. Project-bound, but that project is a company." },
+    "maintenance": { "score": 6, "why": "The strategy and the rule table are durable; the capability/gap list is a snapshot that goes stale the moment real extraction lands." }
+  },
+  "social-media-agent": {
+    "failureModes": { "score": 14, "why": "Seven named traps that each cost real hours: .cmd argv truncation, the 7-day OAuth refresh-token death, Meta renaming metrics, Pillow without raqm, env-var newlines, the pre-parsed body that silently re-ran every sync, and @vercel/blob v1 rejecting private stores." },
+    "reuseLeverage": { "score": 12, "why": "Runs an active system daily and most of its traps generalise to any scheduled agent on Windows talking to platform APIs." },
+    "maintenance": { "score": 5, "why": "Built on three platform APIs that change without notice — the skill itself says Meta renames metrics constantly, which is an admission that parts of it will be wrong soon." }
+  },
+  "kianben-web": {
+    "failureModes": { "score": 11, "why": "The vanishing-logins diagnosis is exemplary and the 'never reintroduce fs writes in a handler' rule is stated as a standing prohibition, but fewer distinct failure signatures are catalogued than in the vishal-site skill." },
+    "reuseLeverage": { "score": 10, "why": "Complete working guide for a live site including the deliberate page-split reasoning, but bounded to that codebase." },
+    "maintenance": { "score": 6, "why": "Architecture notes are stable; the feature inventory and TODO list drift with every deploy." }
+  },
+  "vercel-node-serverless": {
+    "failureModes": { "score": 13, "why": "Built around the two failures that break almost every file-based Node app on Vercel — static assets 404ing because sendFile targets aren't bundled, and JSON writes vanishing on an ephemeral filesystem — with a stated diagnosis for each." },
+    "reuseLeverage": { "score": 14, "why": "Applies to essentially any Express-shaped app deployed to serverless, and it ships an eval set and a store-adapter template, so it is reusable as code and not only as prose." },
+    "maintenance": { "score": 6, "why": "Vercel's build behaviour is the substrate; includeFiles semantics and CLI flags have changed before and will again." }
+  },
+  "responsive-reveal-audit": {
+    "failureModes": { "score": 12, "why": "Its whole thesis is that reported symptoms are unreliable and only measurement is not, and it ships three probe scripts rather than describing them." },
+    "reuseLeverage": { "score": 14, "why": "Every project here has hit 'looks broken on my phone' at least once; the probes turn a vague complaint into pixel numbers on any site, framework or not." },
+    "maintenance": { "score": 8, "why": "getBoundingClientRect and IntersectionObserver are stable web platform; only the preview-pane-specific notes are environment-bound." }
+  },
+  "hero-canvas-fx": {
+    "failureModes": { "score": 9, "why": "Covers the blank-canvas-in-preview problem and reduced-motion/off-screen pausing, but is more recipe than failure catalogue." },
+    "reuseLeverage": { "score": 9, "why": "Narrow: it applies when a plain HTML/CSS/JS site needs an animated hero or a page split. Useful when it fires, rarely fires." },
+    "maintenance": { "score": 7, "why": "Canvas 2D and DPR handling are stable; the preview-pane workaround is tied to one tool's current behaviour." }
+  },
+  "ship-modern-3d-site": {
+    "failureModes": { "score": 11, "why": "Names the deploy failures that masquerade as a broken site — 401 deployment protection, framework:null producing a 404, a stray GitHub auto-connect — which is exactly the class that wastes hours." },
+    "reuseLeverage": { "score": 10, "why": "Complete pipeline with four reference files, but only pays off when building that specific Next.js + R3F + motion + Lenis stack." },
+    "maintenance": { "score": 4, "why": "Pinned to a fast-moving stack — Next App Router, Tailwind v4, react-three-fiber, drei, Framer Motion. Written 19 June 2026 and already at risk; this is the highest decay rate in the library." }
+  },
+  "personal-mentor-website": {
+    "failureModes": { "score": 5, "why": "Almost none documented. It is a build recipe with a decision fork at the top, not a record of what went wrong." },
+    "reuseLeverage": { "score": 8, "why": "Genuinely useful for the recurring 'personal brand site with an owner-editable panel' ask, and the two-stack fork is a real decision, but it duplicates material now better covered by newer skills." },
+    "maintenance": { "score": 6, "why": "Stack-agnostic enough to age slowly, but the Bkash and booking sections are superseded by bkash-payment-integration and the vishal-agarwal-site consultation work." }
+  },
+
+  "claude-code-setup-ops": {
+    "failureModes": { "score": 13, "why": "Built entirely around the real recurring failure — installed at local scope, works in one folder, invisible everywhere else — plus the three distinct reasons a skill doesn't appear in / and a stop-at-first-failure diagnostic ladder." },
+    "reuseLeverage": { "score": 14, "why": "This exact task recurred more than fifteen times across the session history and had no skill covering it; it fires on every new MCP, skill or plugin." },
+    "maintenance": { "score": 6, "why": "The scoping principle is durable but the CLI surface it depends on — flag names, settings.json keys, marketplace format — is young and changes." }
+  },
+  "session-to-project-skill": {
+    "failureModes": { "score": 9, "why": "Names the real failure modes of the practice itself — producing a summary instead of an actionable skill, appending until it becomes a diary, and losing everything by writing it after the budget runs out — but it is a method, so there are fewer observable symptoms to catalogue." },
+    "reuseLeverage": { "score": 15, "why": "The highest-leverage entry in the library: it is the process that produced every other project skill here, and it was requested at least eight separate times. It compounds — each use makes the next session cheaper." },
+    "maintenance": { "score": 9, "why": "Almost entirely principle. The only vendor-specific part is the frontmatter shape." }
+  },
+  "work-within-usage-limits": {
+    "failureModes": { "score": 11, "why": "The multi-agent silent-zero trap is a genuinely non-obvious failure — a truncated fan-out returns confirmedCount 0, which reads as 'no bugs found' — and the recovery via journal.jsonl is specific and actionable." },
+    "reuseLeverage": { "score": 13, "why": "Applies to every long build in this environment, and the user named the constraint himself as his main problem." },
+    "maintenance": { "score": 8, "why": "Mostly durable practice; only the journal.jsonl recovery path is tied to a specific harness." }
+  },
+  "prove-before-claiming": {
+    "failureModes": { "score": 14, "why": "Its core contribution is an explicit list of tools in this environment that return false results — the preview pane freezing rAF, vercel domains inspect misreporting ownership, env pull returning empty for sensitive vars, a local dev server sending no CSP — which is precisely the evidence a verification pass would otherwise trust." },
+    "reuseLeverage": { "score": 14, "why": "Fires before every 'done', which is every task, and the pglite harness pattern is directly reusable on any Postgres-backed project." },
+    "maintenance": { "score": 7, "why": "The discipline and the reporting format are durable; the specific list of lying tools is environment-bound and will need pruning." }
+  },
+  "zero-js-admin-panel": {
+    "failureModes": { "score": 15, "why": "The strongest failure documentation in the library: four numbered builds, what each tried, why each failed, and the generalised diagnostic — 'nothing happens and no error either' means the page's JavaScript never executed, not that the key is wrong — plus three curl commands that isolate browser from code." },
+    "reuseLeverage": { "score": 11, "why": "Applies to any internal or owner-facing panel, which is a recurring but not constant need." },
+    "maintenance": { "score": 8, "why": "Forms, links and server rendering are the most stable things on the web; only the filesystem-before-rewrites note is vendor-specific." }
+  },
+  "owner-admin-security": {
+    "failureModes": { "score": 12, "why": "The fail-open guard is shown as wrong-code-then-right-code, and the 'do not count an admin login as presence' correction is a security property that is invisible until named — an attacker who got in would otherwise sustain their own lockout of the owner." },
+    "reuseLeverage": { "score": 11, "why": "Needed on every product with an owner panel, and the inactivity-failover hierarchy is an unusual design most projects never think to build." },
+    "maintenance": { "score": 8, "why": "HMAC cookies and timing-safe comparison are stable primitives; nothing here depends on a vendor's current behaviour." }
+  },
+  "self-improving-agent-loop": {
+    "failureModes": { "score": 12, "why": "Names the default failure of every long-running agent — a knowledge base that only grows becomes confidently wrong — and the concrete ack-failure bug where a pre-parsed body caused every sync to silently re-run the same work." },
+    "reuseLeverage": { "score": 13, "why": "The architecture transfers to any monitoring or growth agent, and the observed-not-self-reported training signal is the most portable idea in the whole repo." },
+    "maintenance": { "score": 8, "why": "The patterns are platform-independent; only the specific fingerprinting examples and the OAuth/metric-naming notes are tied to current platform behaviour." }
+  },
+  "windows-agent-automation": {
+    "failureModes": { "score": 14, "why": "Every entry is a trap that already cost hours on this machine, and the worst one — a .cmd shim truncating a multi-line prompt at the first newline so the model answers a question it never received — produces plausible output, which is why it survives for days undetected." },
+    "reuseLeverage": { "score": 12, "why": "Fires on every script that shells out or gets scheduled on this workstation, which is the only workstation in play." },
+    "maintenance": { "score": 7, "why": "PowerShell 5.1 and cmd.exe behaviour will not change; the specific credential and CLI paths will." }
+  },
+  "email-capture-and-delivery": {
+    "failureModes": { "score": 14, "why": "Four distinct real failures with their diagnoses: the 403 that is a sender-domain validation error and not a bad key, the double unique index that turns a duplicate into a 500, the +tag regex that rejected every real Gmail alias, and the form that stored eight enquiries while notifying nobody for three weeks." },
+    "reuseLeverage": { "score": 13, "why": "Every project here has a form, and the canonicalization plus unique-index rule is the kind of thing that is cheap to get right once and expensive to discover in production." },
+    "maintenance": { "score": 7, "why": "Gmail's dot/plus semantics and Postgres conflict behaviour are stable; the provider-specific 403 wording is not." }
+  },
+  "vercel-hobby-limits": {
+    "failureModes": { "score": 14, "why": "Documents four failures that all present as 'nothing happened': a rewrite silently dead behind a static file, a form falling through because rewrites merge rather than replace the query string, a deploy refused at the twelfth function, and env pull returning empty for a variable that is actually set." },
+    "reuseLeverage": { "score": 12, "why": "Every project in this environment is on the same plan, so the router-consolidation pattern is directly reusable — it already took one project from sixteen functions to four with no URL changes." },
+    "maintenance": { "score": 5, "why": "Entirely composed of one vendor's current free-tier limits and resolution order. Numbers like 12 and 4.5 MB are exactly the sort of thing that changes without warning." }
+  },
+  "bkash-payment-integration": {
+    "failureModes": { "score": 12, "why": "The money-safety rules are each stated as the failure they prevent, and the dead shared-sandbox credentials are called out with the verbatim 9999 error so nobody spends a day debugging their own code." },
+    "reuseLeverage": { "score": 10, "why": "High value inside Bangladesh and zero outside it. The idempotency and server-side-pricing rules do generalise to any gateway." },
+    "maintenance": { "score": 6, "why": "The API version path and the go-live process are bKash's to change, and the merchant portal has already changed once during this history." }
+  },
+  "bd-import-export-domain": {
+    "failureModes": { "score": 8, "why": "Two strong engineering rules drawn from the domain — never fire a rule on missing data, always state consequence and fix — plus the worked cascade example that a wrong implementation will visibly fail, but it is knowledge rather than an incident log." },
+    "reuseLeverage": { "score": 12, "why": "This is the owner's actual expertise encoded, and it is the input every product here depends on. It is also the part an assistant cannot derive from a codebase." },
+    "maintenance": { "score": 5, "why": "The tariff dataset is republished every fiscal year and the rates change with it; UCP 600 and the cascade structure are durable, the numbers are not." }
+  },
+  "ruthless-venture-review": {
+    "failureModes": { "score": 6, "why": "It is an evaluation method, so it documents how a review fails — flattery, hedging into uselessness, no falsification condition — rather than technical symptoms." },
+    "reuseLeverage": { "score": 13, "why": "Already changed a product's whole strategy once by returning ~6/10 and killing the labour-savings pitch, and the user asks for this frame repeatedly and acts on the answer." },
+    "maintenance": { "score": 9, "why": "Nothing version-bound. Only the market-reality numbers, like the $150-400/month merchandiser figure, will drift." }
+  },
+  "no-code-owner-handoff": {
+    "failureModes": { "score": 9, "why": "Identifies the specific handoff failures — a step with no expected result so the owner cannot distinguish success from silence, an optional-looking variable that silently disables email, and a limitation discovered at the worst moment — but few technical symptoms." },
+    "reuseLeverage": { "score": 13, "why": "The owner does not code, so every single deliverable in this environment ends in a handoff shaped by this skill." },
+    "maintenance": { "score": 9, "why": "Pure communication practice; nothing here depends on a version or a vendor." }
+  },
+  "content-integrity-guard": {
+    "failureModes": { "score": 10, "why": "Names the four places fabrication actually enters — design imports carrying confident placeholder copy, filling out a thin-looking section, re-deploys restoring an old file, and summaries dropping a hedge — and ships a grep gate that catches regression mechanically." },
+    "reuseLeverage": { "score": 12, "why": "Applies to every page published under a real person's name, and the pre-deploy grep is a permanent mechanism rather than a reminder." },
+    "maintenance": { "score": 9, "why": "The rules are absolute and timeless; only the specific corrected-facts list is project-bound, and it lives next to the facts it guards." }
+  },
+  "public-data-without-api-keys": {
+    "failureModes": { "score": 11, "why": "Explains why DOM scraping returns nothing on lazy-loaded pages, why reconstructing title-to-id pairing from embedded JSON produces mismatches, that Facebook needs a retry before OG tags appear, and which URL shapes are signed and will die." },
+    "reuseLeverage": { "score": 11, "why": "The general method — embedded state, then oEmbed, then crawler UA, then OG tags — transfers to most platforms, and it is what makes real content available instead of invented content." },
+    "maintenance": { "score": 4, "why": "It depends on undocumented internals of two platforms. ytInitialData's shape and Facebook's crawler response are both things that change without notice, and the skill will silently rot rather than error." }
+  },
+  "brand-media-pipeline": {
+    "failureModes": { "score": 10, "why": "Covers the signed-CDN-URL trap that yields a broken image next week, the raqm-less Pillow that cannot shape Bengali with no runtime workaround, the immutable-cache trap, and the 256 KiB API cap that decodes to corrupt files." },
+    "reuseLeverage": { "score": 11, "why": "The local-and-free-first default already replaced a paid generation once, and the imagery question recurs on every site build." },
+    "maintenance": { "score": 6, "why": "ffmpeg and the caching rules are durable; the generation-tool landscape and the specific MCP notes turn over quickly." }
+  },
+  "autonomous-channel-plan": {
+    "failureModes": { "score": 8, "why": "Its main contribution is naming the non-engineering failure modes — platform policy on mass-produced content, a single-account strike risk, and five free-tier services being five silent breakage points — which is what actually kills this class of project." },
+    "reuseLeverage": { "score": 8, "why": "Single-purpose scoping document for one open request. Valuable precisely once, though the honesty template for pushing back on an unreachable target does generalise." },
+    "maintenance": { "score": 5, "why": "Rests on current platform monetization policy and current API quota numbers, both of which move, and on an ask that has not been decided yet." }
+  }
+}
