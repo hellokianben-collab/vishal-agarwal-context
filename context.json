@@ -1,7 +1,8 @@
 {
   "$schema_note": "Machine-readable index of this repo. Designed to be fetched and parsed by an agent that wants to decide which files to pull, without reading everything. Paths are repo-relative; prefix with the raw URL base to fetch.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "generated": "2026-08-13",
+  "last_updated": "2026-10-06",
   "raw_base": "https://raw.githubusercontent.com/hellokianben-collab/vishal-agarwal-context/main/",
 
   "person": {
@@ -33,9 +34,10 @@
 
   "profile": {
     "profile/00-who-i-am.md": "Identity, four ventures, the book, audience, and the no-coding-background constraint.",
-    "profile/01-how-i-work.md": "THE WORKING AGREEMENT. 13 rules, each traced to a verbatim quote. Highest-value file in the repo.",
-    "profile/02-tech-environment.md": "Windows 11 / PowerShell 5.1 workstation, Vercel Hobby + Neon + Resend, accounts, live properties, hard limits.",
+    "profile/01-how-i-work.md": "THE WORKING AGREEMENT. 14 rules, including the 6 October standing instruction to maintain this repository.",
+    "profile/02-tech-environment.md": "Dated 6 October Codex workspace and tooling update, followed by the original August workstation and infrastructure snapshot.",
     "profile/03-domain-knowledge.md": "NBR duty cascade, UCP 600 L/C discrepancies, shared imports, bKash/Nagad, BD data rules, the BDT settlement proposal.",
+    "profile/04-accounts-and-access.md": "Dated Vercel project/domain verification, Gmail connection limits, GitHub permissions, and unverified integrations; no private addresses or credentials.",
     "profile/05-open-questions.md": "13 genuinely unresolved items. Ask, never guess."
   },
 
@@ -51,6 +53,15 @@
   },
 
   "lessons": "lessons/README.md",
+
+  "maintenance": {
+    "owner_instruction_date": "2026-10-06",
+    "repository": "hellokianben-collab/vishal-agarwal-context",
+    "standing_instruction": "Keep durable personal and project context current; review, commit, and push suitable updates at milestones when access permits.",
+    "latest_session_update": "work-history/updates/2026-10-06.md",
+    "public_content_only": true,
+    "private_account_inventory": "Local ignored workspace file only; never copy credentials, authentication codes, private addresses, or inbox contents into this public repository."
+  },
 
   "ratings": {
     "rubric": "ratings/RUBRIC.md",

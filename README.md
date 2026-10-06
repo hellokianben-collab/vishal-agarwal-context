@@ -5,6 +5,14 @@ learned — plus 27 reusable skills you can install.**
 
 Built for portability: Claude Code, ChatGPT, Cursor, Gemini, Copilot, or a human colleague.
 
+**Latest context update: 6 October 2026.** The original August archive is now maintained alongside
+dated current workspace and account-access notes. Start with
+[`profile/04-accounts-and-access.md`](profile/04-accounts-and-access.md) for current connection
+evidence, and [`work-history/updates/2026-10-06.md`](work-history/updates/2026-10-06.md) for the Codex
+workspace setup. The owner explicitly requested ongoing repository updates; see rule 14 in the
+working agreement. Private account addresses, credentials, and inbox contents stay outside this
+public repository.
+
 ---
 
 ## Start here (60 seconds)

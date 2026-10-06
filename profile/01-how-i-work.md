@@ -156,3 +156,21 @@ impressive one.
 He is happy to answer. He is not happy to be asked things you could have decided. Batch the genuine
 forks into one message, recommend an option, and keep building everything that does not depend on
 the answer.
+
+## 14. Keep the shared context repository current
+
+> *"From now on you will also update that github reopo and add everything you learn about me there.
+> And also other informations about my projects."* — 6 October 2026
+
+The repository is `hellokianben-collab/vishal-agarwal-context`. This is a standing instruction:
+record durable new personal context and project information as work proceeds, including corrected
+facts, decisions, changed source paths, verified state, lessons, and remaining gaps. Update the
+owning files rather than accumulating a raw conversation transcript.
+
+Review and publish suitable context changes at meaningful milestones or session completion when
+repository access is available. Keep the repository's public-content boundary: no credentials,
+authentication codes, private account addresses, or private customer/email contents. Date mutable
+access claims; a successful connection today is not proof it will stay connected indefinitely.
+
+Current task authorization still governs actions outside this repository. If a push fails, preserve
+the local work and name the failure instead of reporting the repository as updated.

@@ -11,9 +11,34 @@ written for any assistant — Claude, GPT, Gemini, Cursor, Copilot, or a custom 
 
 1. [`profile/00-who-i-am.md`](profile/00-who-i-am.md) — identity, businesses, the fact that he does
    not write code
-2. [`profile/01-how-i-work.md`](profile/01-how-i-work.md) — **the working agreement.** Thirteen rules,
+2. [`profile/01-how-i-work.md`](profile/01-how-i-work.md) — **the working agreement.** Fourteen rules,
    each traced to something he actually said
 3. [`profile/05-open-questions.md`](profile/05-open-questions.md) — what must be asked, never guessed
+
+For current account access, also read [`profile/04-accounts-and-access.md`](profile/04-accounts-and-access.md).
+The original archive was assembled in August 2026; dated later updates override historical
+workstation paths and access claims where they differ.
+
+## Standing instruction: maintain this repository
+
+On **6 October 2026**, Vishal explicitly instructed the assistant to keep
+`hellokianben-collab/vishal-agarwal-context` updated with new information about him and his projects.
+
+- Save new durable facts, preferences, owner corrections, project decisions, implementation state,
+  and verified outcomes during ongoing work, without requiring him to repeat this request.
+- Update the file that owns the fact; date mutable status and distinguish user-provided facts,
+  observed results, unresolved items, and historical context.
+- At meaningful milestones or session completion, review the diff, check for secrets and private
+  content, commit the relevant context changes, and push to this repository when access permits.
+- This instruction authorizes publishing suitable context updates to this named repository. It
+  does not authorize unrelated messages, posts, account changes, or copying private inbox contents.
+- Keep credentials, authentication codes, private account addresses, customer records, and other
+  confidential material out of this public repository. Store necessary private account inventory
+  only in an ignored local file.
+- If publishing is blocked, preserve a reviewed local commit and report the actual access problem;
+  never claim an update reached GitHub until the remote commit is verified.
+
+See rule 14 in [`profile/01-how-i-work.md`](profile/01-how-i-work.md).
 
 **Then, by task:**
 

@@ -45,8 +45,10 @@ const CORE = [
   'profile/01-how-i-work.md',
   'profile/02-tech-environment.md',
   'profile/03-domain-knowledge.md',
+  'profile/04-accounts-and-access.md',
   'profile/05-open-questions.md',
   'work-history/timeline.md',
+  'work-history/updates/2026-10-06.md',
   'lessons/README.md',
 ];
 

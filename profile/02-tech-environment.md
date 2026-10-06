@@ -3,6 +3,31 @@
 Everything an assistant needs to know about the machine, the accounts, and the hard limits — so it
 stops re-discovering them.
 
+## Current Codex workspace — verified 6 October 2026
+
+- Workspace: `C:\Users\Susanta Podder\Documents\ChatGPT\Personal Website`.
+- Active website source: `site/` inside that workspace, copied with owner approval from
+  `Desktop\claude\vishal-site`. The original directory is preserved. Historical Desktop paths in
+  older skills do not override this active workspace.
+- The standalone calculator was copied to the sibling `landed/`, so `site/sync-landed.js` can
+  resolve its source. No redesign or production deployment was performed during this setup.
+- All **27** repository skills are available to Codex at user scope in
+  `C:\Users\Susanta Podder\.agents\skills`: 18 newly installed, nine existing versions preserved.
+  Existing third-party skills, plugins, and MCP configuration were retained.
+- Observed versions: Node 24.14.0, npm 11.9.0, Git 2.52.0, GitHub CLI 2.97.0, Python 3.14.3,
+  PowerShell 7.6.5, Vercel CLI 54.9.1, agent-browser 0.38.2. Claude CLI and ripgrep are present.
+- `npm run dev` in the workspace starts Vercel local mode on `http://127.0.0.1:5057`;
+  `npm run check` checks skill frontmatter, tools, dependencies, and website JavaScript syntax.
+- The copied website's 14 locked npm packages were installed with lifecycle scripts disabled.
+  All 93 copied source/media files matched the original; 53 first-party JavaScript files passed
+  syntax checks. Browser verification rendered the homepage with no page errors.
+- Vercel account access was reconnected and the production project/domain inspected successfully.
+  See `profile/04-accounts-and-access.md`. Production database, email, payments, and ebook delivery
+  were not tested by this environment setup.
+
+The sections below retain the **August 2026** environment snapshot. In particular, "gh not
+installed" and PowerShell 5.1 describe the older setup, not the verified Codex session above.
+
 > **No secrets in this file.** API keys, connection strings, admin keys and tokens are deliberately
 > absent. Where one is needed, the *variable name* is given and the value is the owner's to paste.
 

@@ -1,7 +1,7 @@
 # iamvishalagarwal.com — personal brand site + product platform
 
 **Status:** live · **Started:** 15 Jul 2026 (third iteration) · **Stack:** plain HTML/CSS/JS +
-4 Vercel serverless functions + Neon Postgres · **Deep skill:** `skills/vishal-agarwal-site`
+5 Vercel serverless functions + Neon Postgres · **Deep skill:** `skills/vishal-agarwal-site`
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
@@ -23,8 +23,10 @@ The flagship. It started as a portfolio and became the platform that everything 
 
 ## Why it is built the way it is
 
-**Four serverless functions, not sixteen.** Vercel's Hobby plan caps a deployment at 12 functions
-and builds one per file under `api/`. Rather than pay to escape it, real handlers moved to
+**Five serverless routers in the verified October source/deployment.** The historical consolidation
+reduced sixteen functions to four; adding the community router made five (`admin`, `book`,
+`community`, `forms`, `order`). The August notes record a 12-function plan limit at that time;
+confirm current platform limits when deploying. Real handlers moved to
 `lib/routes/` and `api/` kept four thin routers dispatching on `?do=`, with `vercel.json` rewrites
 preserving every public URL — so bookmarks, curl scripts and the bKash callback URL already
 registered with the bank all kept working.
@@ -81,3 +83,21 @@ form.
 - bKash merchant + PGW production credentials (blocks live book sales)
 - The book PDF file itself (blocks the ebook chain switching on)
 - Four Facebook testimonials, Instagram + TikTok video links (see `profile/05-open-questions.md`)
+
+## Verified workspace and publishing access — 6 October 2026
+
+The owner approved copying the existing site to `site/` in
+`C:\Users\Susanta Podder\Documents\ChatGPT\Personal Website`; the original Desktop source remains
+preserved. The standalone calculator source is beside it in `landed/`. All 93 website files matched
+their source, dependencies were installed, and 53 first-party JavaScript files passed syntax checks.
+The local Vercel development server rendered the homepage in Chrome with no page errors.
+
+Local HTTP checks returned 200 for `/`, `/contact`, `/landed`, `/invoice`, `/api/order-config`, and
+`/admin`. Protected `/api/order-stats` returned 503 without local admin configuration. No real
+database/email/payment credentials were copied into this environment.
+
+Fresh Vercel sign-in and project/domain inspection verified access to
+`susanta-podders-projects/vishal-site`, and the existing production deployment serving
+`iamvishalagarwal.com` was **Ready**. This setup did not publish a new deployment. The open payment,
+PDF, content, and other live-service items above remain historical unresolved items until separately
+reverified; deployment readiness does not prove those integrations work.
