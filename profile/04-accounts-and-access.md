@@ -37,7 +37,9 @@ identity. Access and authorization can change; recheck before a dependent task.
 - HTTPS Git cloning and updating the local checkout succeeded. Git Credential Manager may use
   different credentials than the connected app; successful reads do not prove write access.
 - GitHub CLI was installed but signed out during the initial environment setup. Verify credentials
-  and a completed remote push before claiming this repository has been updated.
+  before relying on it. Independently, **local Git publishing was verified on 6 October 2026**:
+  `git push origin main` successfully published the reviewed context update. The GitHub app's
+  read-only connection and the working local Git credentials are separate access paths.
 
 ## Other services
 
