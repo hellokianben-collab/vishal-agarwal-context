@@ -5,6 +5,36 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Receipt checks and acceptance email follow-up — 7 October 2026
+
+Vishal requested an automatic email when an applicant is selected and confirmed that mentorship
+payments use a **personal bKash account through Send Money**. This follow-up was published after the
+owner approved "Publish this update". The published payment requirement
+described below remains a separate, earlier release.
+
+New applications require an email address, transaction ID, and sender mobile number. Before marking
+payment verified, the owner must independently enter the incoming transaction ID, sender, and exact
+full fee from their own bKash account and confirm the check. Explicit owner corrections preserve the
+original applicant answers. Arbitrary IDs can be submitted for review but cannot establish payment
+or acceptance. This remains manual reconciliation.
+
+Saving **Accepted + Verified** with recorded receipt evidence triggers one acceptance email. The
+recipient freezes atomically on acceptance; a durable delivery record, fixed provider request, and
+idempotency key protect repeated saves and retries. No page load, migration, or deployment sends
+acceptance emails to existing applicants automatically. Uncertain attempts older than the safe retry
+window require a provider check.
+
+[bKash defines transaction IDs as system-generated unique references](https://www.bkash.com/en/products-services/payment).
+No universal format guarantee was found in the official sources checked; matching a guessed pattern
+is not proof of payment. Follow [bKash's account and transaction security guidance](https://www.bkash.com/en/customer-service/security-tips).
+
+All 341 regression assertions passed using isolated PostgreSQL and mocked email. Deployment
+`dpl_3NV5yNQLuv8LF19Ds1t3A4tTS7hs` was verified Ready on the existing domain. Live verification
+passed four public asset hashes, 12 invalid-application rejections, unauthorized admin rejection and
+30 HTTP smoke checks. The additive migration changed no applicant records; verification sent no real
+email or payment. Production acceptance-email delivery and inbox arrival remain untested. Detailed
+evidence: `verification/mentorship-email-review.md` in the active workspace.
+
 ## Payment requirement update — 7 October 2026
 
 Vishal requires bKash payment and transaction-ID collection for mentorship. The published
