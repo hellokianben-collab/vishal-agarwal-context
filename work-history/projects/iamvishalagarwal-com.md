@@ -5,6 +5,23 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Payment requirement update — 7 October 2026
+
+Vishal requires bKash payment and transaction-ID collection for mentorship. The published
+implementation applies required transaction IDs consistently across the paid program application
+flow, with owner verification of the full fee before acceptance. A typed ID remains a pending
+payment claim until checked in bKash. Existing program fees and the payment recipient are unchanged.
+
+The change passed 174 backend/payment regression assertions against isolated PostgreSQL and
+local browser checks for required input, pending application state, and rejected acceptance before verification.
+The owner approved publishing with "Publish the fix". Deployment
+`dpl_AiFGce55UsuSmgiinuByogiM7WzV` was verified Ready on the existing domain. Live checks confirmed
+three exact public asset matches, ten rejected missing/blank payment references, unauthorized admin
+rejection, and 30 existing HTTP checks. The live browser displays the required transaction field.
+The additive database index was verified without changing applicant rows. No real transaction or
+outgoing test message was used. Historical application data is preserved. Evidence is in the active workspace's
+`verification/mentorship-payment-review.md`.
+
 ---
 
 ## What it does
