@@ -5,6 +5,24 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Applicant priority and registration banner — 9 October 2026
+
+Vishal wants to mark genuine examples in the admin panel and receive a prioritized shortlist.
+His chosen priority is **clear business goals and specific needs for guidance, after verified payment**.
+The locally tested implementation uses transparent rules and owner-labeled examples, not an external
+AI model or automatic identity/payment verification. Two genuine examples within a program enable
+topic-based suggestions; owner marks and suggested matches remain visibly distinct. All applications
+remain accessible, and marking an example does not accept, verify payment, or send email.
+
+He also requested **Import & Beyond Live — Registration ongoing** immediately below the homepage's
+Prothom Container countdown, linking to the existing program application. Both updates are locally
+implemented, with 396 regression assertions passing and desktop/mobile browser checks. The owner
+approved **"Publish both updates"**. Deployment `dpl_97J4Gmwc9NdLdx359DUHNNWWXwh9` is Ready on
+the existing domain. Live checks passed six exact asset hashes, 12 invalid-application rejections,
+unauthorized admin review/label rejection, and 30 HTTP smoke checks. The live registration button
+opens the correct program. The additive migration assigned no labels and sent no email. No production
+applicants were labeled by testing; authenticated live labeling and real email delivery remain untested.
+
 ## Receipt checks and acceptance email follow-up — 7 October 2026
 
 Vishal requested an automatic email when an applicant is selected and confirmed that mentorship

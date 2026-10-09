@@ -2,7 +2,7 @@
   "$schema_note": "Machine-readable index of this repo. Designed to be fetched and parsed by an agent that wants to decide which files to pull, without reading everything. Paths are repo-relative; prefix with the raw URL base to fetch.",
   "version": "1.1.0",
   "generated": "2026-08-13",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-09",
   "raw_base": "https://raw.githubusercontent.com/hellokianben-collab/vishal-agarwal-context/main/",
 
   "person": {
