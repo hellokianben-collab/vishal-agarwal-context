@@ -5,6 +5,19 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Explicit approval-email control — 9 October 2026
+
+The owner requested brighter email addresses in admin and a dedicated button to contact an applicant
+after verifying payment. The locally tested follow-up adds amber email links and **Send approval
+email**. Save review no longer sends mail; the separate button accepts and emails the applicant after
+checking saved receipt proof. Repeated clicks use the existing durable duplicate protection. The
+configured website sender remains in use, with replies directed to the owner's email. This supersedes
+the earlier send-on-Accepted-save behavior once published. **Publication approval pending.**
+
+419 local assertions passed, including explicit sending, no sending on save, unpaid and declined
+rejection, concurrent review changes, correct recipient and no duplicates. Browser checks used
+fictional records and simulated email; no real applicant was emailed. Mobile layout checked at390px.
+
 ## Applicant priority and registration banner — 9 October 2026
 
 Vishal wants to mark genuine examples in the admin panel and receive a prioritized shortlist.
