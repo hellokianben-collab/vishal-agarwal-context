@@ -12,7 +12,10 @@ after verifying payment. The locally tested follow-up adds amber email links and
 email**. Save review no longer sends mail; the separate button accepts and emails the applicant after
 checking saved receipt proof. Repeated clicks use the existing durable duplicate protection. The
 configured website sender remains in use, with replies directed to the owner's email. This supersedes
-the earlier send-on-Accepted-save behavior once published. **Publication approval pending.**
+the earlier send-on-Accepted-save behavior. Published with the owner's **"Yes"** approval as
+`dpl_EUrw61oQju3yv73EAo45tVp4Hrmk`, verified Ready on the existing domain. Six exact asset hashes,
+12 invalid application rejections, unauthorized review/label/approval rejection and30 HTTP checks
+passed. No migration or real applicant email was required for this release.
 
 419 local assertions passed, including explicit sending, no sending on save, unpaid and declined
 rejection, concurrent review changes, correct recipient and no duplicates. Browser checks used
