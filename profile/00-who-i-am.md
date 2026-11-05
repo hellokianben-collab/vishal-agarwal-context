@@ -42,7 +42,7 @@ Marketing copy on the site says "5 countries" — that fifth country has never b
 - Title: **_Prothom Container_** ("First Container")
 - Not "Building Businesses Beyond Borders" — that was an AI-generated placeholder title that got
   corrected.
-- Launch timestamp: `2026-07-31T19:00:00+06:00`
+- Current planned launch: **1 January 2027, 7:00 PM Bangladesh time** (`2027-01-01T19:00:00+06:00`). Owner requested the new date on 6 November 2026; the existing 7 PM hour was retained. The website and server schedule were updated and verified. Earlier July and November 2026 dates are historical, not evidence of a completed launch.
 - Sold from `iamvishalagarwal.com` — print flow and ebook flow both built; payment goes through
   bKash PGW. Print price fixture `BOOK_PRICE_BDT=3333`.
 - Ebook delivery has full reading analytics (see `skills/vishal-agarwal-site`).

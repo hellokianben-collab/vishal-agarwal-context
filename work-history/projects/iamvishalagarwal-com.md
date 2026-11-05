@@ -5,6 +5,29 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Redesigned countdown and January launch — published 6 November 2026
+
+The owner requested the timer again with a new design and a launch date of **1 January 2027**.
+The existing **7:00 PM Bangladesh time** hour was retained and stated during implementation:
+`2027-01-01T19:00:00+06:00` (13:00 UTC). This supersedes the previous 5 November 2026 schedule.
+The server-owned date in `lib/product.js`, public configuration, checkout gate, homepage date and
+both countdowns agree. The printed price remains Tk 700.
+
+The top bar now uses an olive rounded panel, amber days tile, readable numeric units, a visible
+date/time and a Remind me link to the existing waitlist. The old split-flap code was replaced by
+one shared clock updating the top panel and book section from server time. At zero, timers hide;
+checkout is offered only after the server confirms availability. No email campaign was sent.
+The historical November campaign script retains its date guard and must not be reused as a new send.
+
+Preview was shown before publication through the existing preview-then-deploy workflow. Deployment
+`dpl_6MeuaebWoRurjAb6P1ZDSfXaSwbd` is Ready on iamvishalagarwal.com; rollback reference is
+`dpl_EnT8tvBKvVKA9fKocLf4tVMayJ6h`. 150 local checks passed (30 product, 45 launch/payment simulations,
+63 checkout guards, 12 browser countdown assertions), plus 13 read-only live checks. Browser checks
+cover desktop, tablet and 320/390px mobile timer layout, synchronized ticking, the exact boundary,
+and the waitlist link. Live configuration is scheduled/salesOpen:false. All image files match the
+previous deployment. Real payments and email delivery were not exercised. Local evidence:
+`verification/countdown-2027-01-01/`.
+
 ## Diverse image refresh — published 6 November 2026
 
 The owner selected a green-polo hero portrait generated from his supplied photographs, then expanded
