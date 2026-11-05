@@ -5,6 +5,27 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Countdown collapses after three seconds — published 6 November 2026
+
+The owner wanted the full timer on opening/refresh, then a compact button-like countdown after
+three seconds so it would not dominate the first impression. The original full design remains
+for three visible seconds; a 650 ms eased width/height transition turns it into a 244 × 46 px pill
+and releases space so the hero moves upward. No forced scroll or persisted dismissal. The pill
+links to the book; all three displays use the same server-aligned clock. Hidden expanded content
+becomes inert, keyboard focus transfers if needed, and reduced-motion skips interpolation.
+The planned date remains **1 January 2027, 7 PM Bangladesh time**.
+
+Production `dpl_669Qr9cpp7tASj3AKEs74tuaEeA4` is Ready on the original domain; previous release is
+`dpl_6MeuaebWoRurjAb6P1ZDSfXaSwbd`. Verified 70 local motion checks across four widths and reduced
+motion, 12 countdown/availability regressions, focus and link behavior, 28 live motion checks and
+seven exact live file hashes. Only frontend timer code/markup/styles and shared cache versions
+changed. Images, server configuration, payments and email logic were preserved. No real payments
+or email submissions tested. Local evidence: `verification/countdown-collapse-2026-11-06/`.
+
+The owner then requested a review of the other Vercel sites and authorized choosing/building a
+useful idea for the following day. See `shipment-desk.md` for the isolated owner-private prototype
+and dated review scope. The other existing production sites were not changed.
+
 ## Redesigned countdown and January launch — published 6 November 2026
 
 The owner requested the timer again with a new design and a launch date of **1 January 2027**.
