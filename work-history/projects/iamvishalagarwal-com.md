@@ -5,6 +5,21 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Green-polo hero portrait — 6 November 2026
+
+The owner selected the green-polo option from three AI-generated portraits made using his supplied
+photographs. He requested the updated hero in preview first, followed by deployment to the existing
+iamvishalagarwal.com domain. The selected image is prepared as a 99 KB WebP in the active workspace's
+`site/assets/hero-green-polo-20261106.webp`, retaining its natural cream background inside the existing
+arched frame. The old dog-portrait fade was removed; the surrounding page design remains unchanged.
+
+The local preview was opened for the owner. Desktop and mobile Chrome checks confirmed the image
+loads with no settled horizontal overflow or captured page errors. Workspace checks passed for
+64 JavaScript files and five routers. Publication is authorized but **pending Vercel access**:
+the connector returned team-access 403 and the local CLI had no credentials. A consent request
+was presented; no new production deployment has been claimed. Payments, email and database
+behavior were not changed by this image update.
+
 ## Explicit approval-email control — 9 October 2026
 
 The owner requested brighter email addresses in admin and a dedicated button to contact an applicant
