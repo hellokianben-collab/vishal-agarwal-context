@@ -1,9 +1,19 @@
 # Accounts and access — dated verification
 
-Last reviewed: **6 October 2026**, Bangladesh time. Account names do not establish personal
+Last reviewed: **6 November 2026** for Vercel; other sections retain **6 October 2026** checks. Account names do not establish personal
 identity. Access and authorization can change; recheck before a dependent task.
 
 ## Vercel
+
+**6 November 2026:** the connector returned team-access 403 even after the owner reported consent.
+The CLI default lookup reported no credentials, but the existing credential directory at
+`AppData/Roaming/xdg.data/com.vercel.cli` worked with `--global-config`. `whoami` returned
+`susanta-podder`; project inspection and the per-project domains API verified the same website
+project and existing apex/www domain mappings. The authorized image refresh was deployed as
+`dpl_EnT8tvBKvVKA9fKocLf4tVMayJ6h` and verified on the original domain. No DNS changes were needed.
+Do not copy tokens or credential file contents into reports or this repository.
+
+Historical verification, **6 October 2026**:
 
 - CLI sign-in completed using the owner's browser authorization.
 - `vercel whoami` returned **susanta-podder**.

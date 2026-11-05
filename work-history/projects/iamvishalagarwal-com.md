@@ -5,20 +5,34 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
-## Green-polo hero portrait — 6 November 2026
+## Diverse image refresh — published 6 November 2026
 
-The owner selected the green-polo option from three AI-generated portraits made using his supplied
-photographs. He requested the updated hero in preview first, followed by deployment to the existing
-iamvishalagarwal.com domain. The selected image is prepared as a 99 KB WebP in the active workspace's
-`site/assets/hero-green-polo-20261106.webp`, retaining its natural cream background inside the existing
-arched frame. The old dog-portrait fade was removed; the surrounding page design remains unchanged.
+The owner selected a green-polo hero portrait generated from his supplied photographs, then expanded
+the request to all remaining website photos except the book cover and video thumbnails. He prefers
+different appropriate images across sections. The final set uses a green-polo hero, navy-blazer About
+portrait, charcoal-shirt mentorship headshot, agricultural trade still life, wig-making workbench,
+cement supplies, and a blue-shirt desk portrait for education. He rejected the ivory-kurta close-up;
+the charcoal headshot replaces it. All seven final images are optimized WebP assets in `site/assets/`
+with `20261106` filenames. Existing layout, facts, application logic, book art and thumbnails remain.
 
-The local preview was opened for the owner. Desktop and mobile Chrome checks confirmed the image
-loads with no settled horizontal overflow or captured page errors. Workspace checks passed for
-64 JavaScript files and five routers. Publication is authorized but **pending Vercel access**:
-the connector returned team-access 403 and the local CLI had no credentials. A consent request
-was presented; no new production deployment has been claimed. Payments, email and database
-behavior were not changed by this image update.
+**Explicit image-only brand exception:** the owner requested **SHAH CEMENT** lettering on the bags
+in the illustrative cement image. This overrides the older no-brand rule for that image only.
+The section heading remains **Cement**; the image request does not establish a new brand relationship
+or authorize new dealership claims. These are AI-generated illustrative assets, not documentary
+photographs of specific facilities, shipments or teaching events.
+
+Preview was shown before publishing, and the owner also explicitly replied **approved**. Deployment
+`dpl_EnT8tvBKvVKA9fKocLf4tVMayJ6h` is Ready on **iamvishalagarwal.com**; previous production is
+`dpl_EUrw61oQju3yv73EAo45tVp4Hrmk`. The connector still lacked team access, but the existing local
+Vercel CLI credential directory worked when passed through `--global-config`.
+
+Verification: 27 live checks passed, including exact hashes for all changed public files and the
+preserved book cover, eight Facebook thumbnails and app.js. Desktop/mobile Chrome checks confirmed
+images load without settled horizontal overflow or captured page errors. All 105 previous source
+files were compared: only five HTML files and the shared stylesheet changed, plus seven new images.
+Workspace checks passed for 64 JavaScript files/five routers. No payment, outgoing email, valid
+application submission or authenticated admin action was exercised. Evidence is saved locally under
+`verification/image-refresh-2026-11-06/`.
 
 ## Explicit approval-email control — 9 October 2026
 
