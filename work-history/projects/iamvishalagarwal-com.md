@@ -5,6 +5,22 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Paid-program process review — prepared locally, 10 November 2026
+
+The owner requested a full review of mentoring applications with the requirement that only paid,
+approved applicants receive program service. A requested book-applicant Excel export was delivered
+first from read-only production data and kept private outside the deployable site and this repository.
+
+A focused follow-up covering program eligibility, administration and scheduling is prepared in the
+active workspace. It passed 478 targeted local assertions, 30 book regressions, syntax checks across
+65 JavaScript files, and desktop/mobile admin review. Tests used isolated PostgreSQL and simulated
+email. Publication approval was requested separately and is pending; the live deployment remains
+the 6 November version. No customer payment/status records or outgoing messages were changed.
+
+Manual personal-bKash receipt reconciliation and admission to externally hosted meetings still
+require the owner. This review does not establish an unbreachable system or automatic bank verification.
+Private technical evidence remains in the workspace; it is not included in the public context export.
+
 ## Countdown collapses after three seconds — published 6 November 2026
 
 The owner wanted the full timer on opening/refresh, then a compact button-like countdown after
