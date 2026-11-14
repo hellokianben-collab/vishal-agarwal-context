@@ -5,6 +5,14 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Mentoring review preview — 14 November 2026
+
+The owner requested an interactive preview of the pending 10 November changes. The local preview
+uses an isolated database with fictional paid, unpaid, and business-enquiry examples; actual email
+and payment operations are disabled. An unpaid sample was refused session acceptance through the
+current admin handler. The security changes still await publication approval; no deployment was
+performed for this follow-up. Private operational records and backups remain outside this repository.
+
 ## Paid-program process review — prepared locally, 10 November 2026
 
 The owner requested a full review of mentoring applications with the requirement that only paid,
