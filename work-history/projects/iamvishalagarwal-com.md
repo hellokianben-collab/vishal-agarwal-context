@@ -5,12 +5,14 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
-## Import & Beyond Live homepage banner — local preview, 24 November 2026
+## Import & Beyond Live homepage banner — published 24 November 2026
 
-Vishal requested more prominence for Import & Beyond Live below the book countdown. The local
-homepage uses a dark olive banner, a larger program title and an amber registration button.
-Browser checks at widths from 320 to 1440 pixels confirmed the banner fits. The button opens
-the application with Import & Beyond Live selected. Publication is pending.
+Vishal requested more prominence for Import & Beyond Live below the book countdown and approved
+publication. The homepage uses a dark olive banner, a larger program title and an amber
+registration button. Deployment `dpl_FmUqsCeix9XjzebA67DfzwjPaxn3` is live on
+`iamvishalagarwal.com`. Comparing all 112 source files to the previous production release
+confirmed only `index.html` and `style.css` changed. Live browser checks at 390 and 1440 pixels
+confirmed the button opens the application with Import & Beyond Live selected.
 
 ## Mentoring review preview — 14 November 2026
 
