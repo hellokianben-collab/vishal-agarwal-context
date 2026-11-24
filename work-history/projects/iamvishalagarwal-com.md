@@ -5,6 +5,13 @@
 
 The flagship. It started as a portfolio and became the platform that everything else mounts onto.
 
+## Import & Beyond Live homepage banner — local preview, 24 November 2026
+
+Vishal requested more prominence for Import & Beyond Live below the book countdown. The local
+homepage uses a dark olive banner, a larger program title and an amber registration button.
+Browser checks at widths from 320 to 1440 pixels confirmed the banner fits. The button opens
+the application with Import & Beyond Live selected. Publication is pending.
+
 ## Mentoring review preview — 14 November 2026
 
 The owner requested an interactive preview of the pending 10 November changes. The local preview
